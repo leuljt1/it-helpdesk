@@ -7,13 +7,15 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use('/api/auth', require('./routes/auth'));
 
 app.get('/', (req, res) => {
   res.send('IT Helpdesk API is running');
 });
 
+app.use('/api/tickets/:ticketId/comments', require('./routes/comments'));
 app.use('/api/tickets', require('./routes/tickets'));
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/users', require('./routes/users'));
 
 const PORT = process.env.PORT || 5000;
 

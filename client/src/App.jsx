@@ -1,3 +1,4 @@
+import TicketDetail from './pages/TicketDetail';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
@@ -32,6 +33,14 @@ export default function App() {
             </Private>
           }
         />
+        <Route
+          path="/tickets/:id"
+          element={
+            <Private>
+              <TicketDetail />
+            </Private>
+  }
+/>
       </Routes>
     </BrowserRouter>
   );

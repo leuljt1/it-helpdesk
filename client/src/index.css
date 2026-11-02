@@ -35,3 +35,30 @@ button {
 button.secondary { background: #6b7280; margin-left: 8px; }
 .error { color: #b91c1c; margin-top: 12px; }
 .success { color: #15803d; margin-top: 12px; }
+.container.wide { max-width: 800px; }
+.filters { display: flex; gap: 12px; margin: 16px 0; }
+.filters select { width: auto; }
+.ticket-row {
+  display: block;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+.ticket-row:hover { background: #f9fafb; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  background: #e5e7eb;
+  margin-right: 6px;
+}
+.badge.high { background: #fecaca; }
+.badge.medium { background: #fde68a; }
+.badge.low { background: #bbf7d0; }
+.comment { border-left: 3px solid #2563eb; padding: 6px 12px; margin: 10px 0; background: #f9fafb; }
+.comment small { color: #6b7280; }
+.admin-box { background: #eff6ff; padding: 12px; border-radius: 6px; margin: 16px 0; }
